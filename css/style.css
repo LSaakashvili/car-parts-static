@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    font-family: 'Bebas Neue', cursive;
+}
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.nav-up{
+    position: fixed;
+    display: grid;
+    min-height: 32px;
+    width: 100vw;
+    background-color: #0007B5;
+    color: white;
+}
+
+#nav{
+    position: fixed;
+}
+
+.navbar{
+    position: fixed;
+    width: 100vw;
+}
+
+#search-background{
+    width:30px;
+    height:30px;
+    border-top:1px solid #0007B5;
+    border-right:1px solid #0007B5;
+    border-bottom:1px solid #0007B5;
+    height:38px;
+    width:38px;
+    background-image: url("../images/transparency.png");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+#search{
+    border-radius: 0px;
+    border:1px solid #0007B5;
+    height:38px;
+    font-size:15px;
+    max-width:300px;
+}
+
+#search-btn{
+    height:34px;
+    width:33px;
+    visibility:hidden;
+}
+
+#backgroundbmw{
+    height:500px;
+    width: 100vw;
+    background-image: url("../images/backgroundbmw.png");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+}
+
+#backgroundbmw > div > div{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: right;
+    justify-content: right;
+}
+
+#backgroundbmw > div > div> h2{
+    max-width: 388px;
+    text-align: right;
+    font-size:48px;
+}
+
+#button-main{
+    width:270px;
+    height:60px;
+    background-color: #0007B5;
+    color: white;
+    border:none;
+    font-size: 25px;
+    outline:none;
+    border-radius:0px;
+}
+
+#pagetitle{
+    font-size:32px;
+}
+
+#box-container{
+    width:350px;
+    height:318px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-left:25px;
+    padding-top:85px;
+    border-radius:15px;
+}
+
+#box-container > h1{
+    font-size:45px !important;
+}
+
+#box-btn{
+    width:120px;
+    height:52px;
+    color: white;
+    border: 2px solid white;
+    font-size:23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    transition-delay: 0.1s;
+}
+
+#box-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+#backgroundbmw2{
+    width: 100vw;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    margin-top:150px;
+    background-image: url("../images/backgroundbmw2.png");
+    color: white;
+}
+
+
+#backgroundbmw2 > div > h1{
+    font-size:55px;
+}
+
+#backgroundbmw2 > div > p{
+    font-size:25px;
+}
+
+#footer{
+    width:100vw;
+    min-height:265px;
+    padding-top:100px;
+    background-color: #141414;
+    color: white;
+}
+
+#footer-list{
+    margin:10%;
+    font-size:20px;
+}
+
+#footer-list-h1{
+    margin-left:20px;
+    font-size:38px;
+    color: white;
+}
+
+#footer-items{
+    display: flex;
+}
+
+@media (max-width:380px) {
+    #footer-items{
+        display:block;
+        text-align: center;
+    }
+}
+
+.modal-box{
+    width:300px;
+}
+
+.modalbg-authentication{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom:50px;
+    padding-top:18vh;
+}
+
+.modalbox-authentication1{
+    width:200px;
+    min-height:480px;
+    background-image: url("../images/signup.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.modalbox-authentication2{
+    width:400px;
+    min-height:480px;
+    padding-bottom:15px;
+    background-color: #0007B5;
+    border-radius: 0px 20px 20px 0px;
+    padding-top:20px;
+    padding-left:25px;
+    padding-right:25px;
+    color: white;
+}
+
+#signup-btn{
+    background-color: white;
+    color:#0007B5;
+    width:95px;
+}
+
+@media (max-width:400px) {
+    .modalbox-authentication1{
+        display: none;
+    }
+    .modalbox-authentication2{
+        border-radius:15px 15px 15px 15px;
+    }
+    #signup-btn{
+        justify-self: center;
+    }
+}
